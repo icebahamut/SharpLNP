@@ -30,7 +30,7 @@ namespace SharpLNP
 		public frm_disclaim(){
 			
 			InitializeComponent();
-			richTextBox1.Rtf = @"{\rtf1\ansi \fs30 \bSharp LNP(#LNP)\b0
+			richTextBox1.Rtf = @"{\rtf1\ansi \fs30 \b Sharp LNP(#LNP)\b0
 \line \fs18
 This software is under the license terms of MIT license.
 \line
