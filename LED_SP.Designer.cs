@@ -1,0 +1,119 @@
+﻿ /*
+Copyright (c) 2017 icebahamut (icebahamut[at]hotmail[dot]com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons
+to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+*/
+
+namespace SharpLNP
+{
+	partial class LED_SP
+	{
+		/// <summary>
+		/// Designer variable used to keep track of non-visual components.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
+		private System.Windows.Forms.Label lbl_title;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Button btn_led0;
+		private System.Windows.Forms.Label lbl_x;
+		
+		/// <summary>
+		/// Disposes resources used by the control.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing) {
+				if (components != null) {
+					components.Dispose();
+				}
+			}
+			base.Dispose(disposing);
+		}
+		
+		/// <summary>
+		/// This method is required for Windows Forms designer support.
+		/// Do not change the method contents inside the source code editor. The Forms designer might
+		/// not be able to load this method if it was changed manually.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			this.lbl_title = new System.Windows.Forms.Label();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.btn_led0 = new System.Windows.Forms.Button();
+			this.lbl_x = new System.Windows.Forms.Label();
+			this.panel1.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// lbl_title
+			// 
+			this.lbl_title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lbl_title.Location = new System.Drawing.Point(0, 0);
+			this.lbl_title.Name = "lbl_title";
+			this.lbl_title.Size = new System.Drawing.Size(135, 15);
+			this.lbl_title.TabIndex = 4;
+			this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lbl_title.Click += new System.EventHandler(this.Lbl_titleClick);
+			// 
+			// panel1
+			// 
+			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel1.Controls.Add(this.btn_led0);
+			this.panel1.Location = new System.Drawing.Point(0, 15);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(150, 150);
+			this.panel1.TabIndex = 3;
+			this.panel1.Click += new System.EventHandler(this.Panel1Click);
+			// 
+			// btn_led0
+			// 
+			this.btn_led0.BackColor = System.Drawing.Color.Black;
+			this.btn_led0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_led0.Location = new System.Drawing.Point(30, 30);
+			this.btn_led0.Name = "btn_led0";
+			this.btn_led0.Size = new System.Drawing.Size(90, 90);
+			this.btn_led0.TabIndex = 0;
+			this.btn_led0.UseVisualStyleBackColor = false;
+			// 
+			// lbl_x
+			// 
+			this.lbl_x.BackColor = System.Drawing.Color.Red;
+			this.lbl_x.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.lbl_x.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_x.ForeColor = System.Drawing.Color.White;
+			this.lbl_x.Location = new System.Drawing.Point(135, 0);
+			this.lbl_x.Name = "lbl_x";
+			this.lbl_x.Size = new System.Drawing.Size(15, 15);
+			this.lbl_x.TabIndex = 2;
+			this.lbl_x.Text = "X";
+			this.lbl_x.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lbl_x.Click += new System.EventHandler(this.Lbl_xClick);
+			// 
+			// LED_SP
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.lbl_x);
+			this.Controls.Add(this.lbl_title);
+			this.Controls.Add(this.panel1);
+			this.Name = "LED_SP";
+			this.panel1.ResumeLayout(false);
+			this.ResumeLayout(false);
+
+		}
+	}
+}
